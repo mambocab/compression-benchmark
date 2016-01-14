@@ -1,4 +1,10 @@
+- current goals
+  - get a basic comparison with the job ryan gave me
+    - then, get it working with a smaller population
+      - then, get this to alecksey and see what he thinks
+    - also run it with different compressors
+  - check out what it's like with a smaller population -- does it compress better than randomly-generated data, as expected?
+
 - jobs on blade_11 trying the big job ryan suggested
-- is 
-
-
+- will using a small compression give us acceptibly compressed data?
+- run it on windows (https://datastax.jira.com/browse/ITINF-45)
