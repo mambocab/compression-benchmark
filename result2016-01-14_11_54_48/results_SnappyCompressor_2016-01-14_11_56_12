@@ -1,0 +1,38 @@
+Current cluster is now: with-SnappyCompressor_uniform_dist_2016-01-14_11_56_12
+Connected to cluster: with-SnappyCompressor_uniform_dist_2016-01-14_11_56_12, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Running WRITE with 200 threads for 5000 iteration
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          5000,    6874,    6874,    6874,    33.3,    22.7,    88.4,   169.1,   270.5,   287.2,    0.7,  0.00000,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 6874 [WRITE:6874]
+partition rate            : 6874 [WRITE:6874]
+row rate                  : 6874 [WRITE:6874]
+latency mean              : 33.3 [WRITE:33.3]
+latency median            : 22.7 [WRITE:22.7]
+latency 95th percentile   : 88.4 [WRITE:88.4]
+latency 99th percentile   : 169.1 [WRITE:169.1]
+latency 99.9th percentile : 270.5 [WRITE:270.5]
+latency max               : 287.2 [WRITE:287.2]
+Total partitions          : 5000 [WRITE:5000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:00:00
+
+END
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.9135822109412006
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.9135822109412006

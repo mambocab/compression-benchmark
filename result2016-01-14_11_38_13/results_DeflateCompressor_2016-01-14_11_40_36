@@ -1,0 +1,38 @@
+Current cluster is now: with-DeflateCompressor_no_dist_2016-01-14_11_40_36
+Connected to cluster: with-DeflateCompressor_no_dist_2016-01-14_11_40_36, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Running WRITE with 200 threads for 5000 iteration
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          5000,    6142,    6142,    6142,    37.5,    23.5,   130.6,   267.8,   354.2,   371.6,    0.8,  0.00000,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 6142 [WRITE:6142]
+partition rate            : 6142 [WRITE:6142]
+row rate                  : 6142 [WRITE:6142]
+latency mean              : 37.5 [WRITE:37.5]
+latency median            : 23.5 [WRITE:23.5]
+latency 95th percentile   : 130.6 [WRITE:130.6]
+latency 99th percentile   : 267.8 [WRITE:267.8]
+latency 99.9th percentile : 354.2 [WRITE:354.2]
+latency max               : 371.6 [WRITE:371.6]
+Total partitions          : 5000 [WRITE:5000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:00:00
+
+END
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.859422389731373
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.859422389731373

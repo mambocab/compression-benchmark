@@ -1,0 +1,38 @@
+Current cluster is now: with-LZ4Compressor_no_dist_2016-01-14_11_39_14
+Connected to cluster: with-LZ4Compressor_no_dist_2016-01-14_11_39_14, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Running WRITE with 200 threads for 5000 iteration
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          5000,    6322,    6322,    6322,    33.4,    24.0,    87.4,   133.2,   152.5,   222.7,    0.8,  0.00000,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 6322 [WRITE:6322]
+partition rate            : 6322 [WRITE:6322]
+row rate                  : 6322 [WRITE:6322]
+latency mean              : 33.4 [WRITE:33.4]
+latency median            : 24.0 [WRITE:24.0]
+latency 95th percentile   : 87.4 [WRITE:87.4]
+latency 99th percentile   : 133.2 [WRITE:133.2]
+latency 99.9th percentile : 152.5 [WRITE:152.5]
+latency max               : 222.7 [WRITE:222.7]
+Total partitions          : 5000 [WRITE:5000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:00:00
+
+END
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.9136356563990629
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.9136356563990629

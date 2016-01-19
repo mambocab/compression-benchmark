@@ -1,0 +1,38 @@
+Current cluster is now: with-no_compressor_no_dist_2016-01-14_11_55_09
+Connected to cluster: with-no_compressor_no_dist_2016-01-14_11_55_09, max pending requests per connection 128, max connections per host 8
+Datatacenter: datacenter1; Host: /127.0.0.1; Rack: rack1
+Created keyspaces. Sleeping 1s for propagation.
+Sleeping 2s...
+Running WRITE with 200 threads for 5000 iteration
+type       total ops,    op/s,    pk/s,   row/s,    mean,     med,     .95,     .99,    .999,     max,   time,   stderr, errors,  gc: #,  max ms,  sum ms,  sdv ms,      mb
+total,          5000,    5804,    5804,    5804,    37.6,    21.3,   132.0,   277.6,   302.3,   403.9,    0.9,  0.00000,      0,      0,       0,       0,       0,       0
+
+
+Results:
+op rate                   : 5804 [WRITE:5804]
+partition rate            : 5804 [WRITE:5804]
+row rate                  : 5804 [WRITE:5804]
+latency mean              : 37.6 [WRITE:37.6]
+latency median            : 21.3 [WRITE:21.3]
+latency 95th percentile   : 132.0 [WRITE:132.0]
+latency 99th percentile   : 277.6 [WRITE:277.6]
+latency 99.9th percentile : 302.3 [WRITE:302.3]
+latency max               : 403.9 [WRITE:403.9]
+Total partitions          : 5000 [WRITE:5000]
+Total errors              : 0 [WRITE:0]
+total gc count            : 0
+total gc mb               : 0
+total gc time (s)         : 0
+avg gc time(ms)           : NaN
+stdev gc time(ms)         : 0
+Total operation time      : 00:00:00
+
+END
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.0
+
+
+		SSTable Compression Ratio: 0.0
+		SSTable Compression Ratio: 0.0
