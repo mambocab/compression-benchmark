@@ -2,21 +2,7 @@
 # http://www.datastax.com/dev/blog/improved-cassandra-2-1-stress-tool-benchmark-any-schema
 
 keyspace: stresscql
-keyspace_definition: |
-  CREATE KEYSPACE stresscql WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
 table: blogposts
-table_definition: |
-  CREATE TABLE blogposts (
-        domain text,
-        published_date timeuuid,
-        url text,
-        author text,
-        title text,
-        body text,
-        PRIMARY KEY(domain, published_date)
-  ) WITH CLUSTERING ORDER BY (published_date DESC) 
-    AND compaction = { 'class':'LeveledCompactionStrategy' } 
-    AND comment='A table to hold blog posts'
 
 columnspec:
   - name: domain
@@ -33,7 +19,7 @@ columnspec:
     size: uniform(5..20)         #author names should be short
 
   - name: body
-    size: gaussian(100..50000)    #the body of the blog post can be long
+    size: gaussian(100..25000)    #the body of the blog post can be long
 
 ### Batch Ratio Distribution Specifications ###
 

@@ -43,13 +43,13 @@ for compressor in '' ; do
            " | ccm node1 cqlsh
 
 
-      ccm stress user profile=./$profile ops\(insert=1\) n=1M
+      ccm stress user profile=./$profile ops\(insert=1\) n=1M -rate threads=200
       ccm node1 nodetool flush
       ccm node1 nodetool cfstats keyspace1
       ccm node1 nodetool compact
       ccm node1 nodetool cfstats keyspace1
       ccm stop
-    ) &>1 | tee "$result_dir"/"results_${compressor_id_string}_${profile_id_string}_${stamp}"
+    ) 2>&1 | tee "$result_dir"/"results_${compressor_id_string}_${profile_id_string}_${stamp}"
     ( ccm stop ) # stop in a subshell so it can fail
 
   done
